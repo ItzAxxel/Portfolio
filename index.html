@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="preloader">
+      <div id="loader"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="loader.js"></script>
     <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -26,13 +31,16 @@
   <nav id="navbar" class="nav">
     <ul class="nav-list">
       <li>
-        <a href="#welcome-section">Sobre mi</a>
+        <a href="#welcome-section">Inicio</a>
+      </li>
+      <li>
+        <a href="#sobreMi">Sobre mi</a>
       </li>
       <li>
         <a href="#projects">Mi trabajo</a>
       </li>
       <li>
-        <a href="#contact">Contactame</a>
+        <a href="#contact">Contacto</a>
       </li>
     </ul>
   </nav>
@@ -43,15 +51,30 @@
   
   <section id="welcome-section" class="welcome-section">
     <h1>Hola soy Axel</h1>
-    <p>y soy un novato en desarrollo de paginas web</p>
+    <div class="contenedor">
+        <p class="textoAnimado">Web developer.<span id="animacion">&#160;</span></p>
+    </div>
+  </section>
+
+  <div class="linea"></div>
+
+  <section id="sobreMi" class="sobreMi">
+    <h2 id="descripcion">¡Hola inernauta!
+      Me alegro de que te hayas parado en mi</h2>
+    <h2 id="descripcion"> portfolio. Soy un chico de 17 años el cual</h2>
+    <h2 id="descripcion"> está empezando en el desarollo web.</h2>
+    <div class="contenedor">
+      </div>
   </section>
   
   <!-- END WELCOME SECTION -->
   
   <!-- START PROJECTS SECTION -->
+
+	<div class="linea"></div>
   
   <section id="projects" class="projects-section">
-    <h2 class="projects-section-header">Aquí hay unos proyectos mios</h2>
+    <h2 class="projects-section-header">Mis proyectos</h2>
   
     <div class="projects-grid">
       <a
@@ -159,6 +182,7 @@
       >Ver más<i class="fas fa-chevron-right"></i
     ></a>
   </section>
+	<div class="linea"></div>
   
   <!-- END PROJECTS SECTION -->
   
@@ -166,11 +190,11 @@
   
   <section id="contact" class="contact-section">
     <div class="contact-section-header">
-      <h3>¿Estamos en contacto?</h3>
+      <h3>Aquí tienes mi contacto</h3>
     </div>
       <a
         id="profile-link"
-        href="https://github.com/freecodecamp"
+        href="https://github.com/Axelshito"
         target="_blank"
         class="btn contact-details"
         ><i class="fab fa-github"></i> Axel Arroyo</a
@@ -179,7 +203,7 @@
         href=""
         target="_blank"
         class="btn contact-details"
-        ><i class="fab fa-twitter"></i> Axel</a
+        ><i class="fab fa-twitter"></i> @AxelArroyo</a
       >
   </section>
   
@@ -193,7 +217,7 @@
     </p>
     <p>
       &copy;
-      <a href="https://axelshito.github.io/Carta-De-Presentacion/#welcome-section" target="_blank"
+      <a href="https://axelshito.github.io/Carta-De-Presentacion/#sobreMi" target="_blank"
         >Axel Arroyo
       </a>
     </p>

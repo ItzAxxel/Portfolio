@@ -151,7 +151,7 @@
   
   /* Welcome section */
   
-  .welcome-section {
+  .welcome-section, .sobreMi {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -178,7 +178,7 @@
   }
   
   .projects-section-header {
-    max-width: 640px;
+    max-width: 300px;
     margin: 0 auto 6rem auto;
     border-bottom: 0.2rem solid var(--main-white);
   }
@@ -222,7 +222,7 @@
   }
   
   .project:hover .code {
-    color: #ff7f50;
+    color: #EF7F1A;
   }
   
   .project-image {
@@ -243,13 +243,14 @@
   }
   
   .btn-show-all {
-    font-size: 2rem;
-    background: var(--main-gray);
-    transition: background 0.3s ease-out;
+
+    background: #3f393a
   }
   
   .btn-show-all:hover {
-    background: var(--main-red);
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
   }
   
   .btn-show-all:hover > i {
@@ -335,3 +336,69 @@
     }
   }
   
+  .linea {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: var(--main-gray);
+    border-top: 4px solid var(--main-red);
+  }
+
+/*loader*/
+#preloader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: 1000
+}
+
+#loader{
+  position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('loading.gif') 50% 50% no-repeat #1d1c1a;
+    opacity: .8;
+}
+
+.contenedor{
+  margin: 50px;
+}
+
+.textoAnimado{
+  float: left;
+  color: #fff;
+  position: relative;
+  font-size: 1.5em;
+}
+
+#animacion {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background-color: #1d1c1a;
+  border-left: 1px solid #fff;
+
+-webkit-animation: maquina 3s infinite alternate steps(25);
+} 
+
+@keyframes maquina {
+  from{
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+#descripcion{
+  font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
